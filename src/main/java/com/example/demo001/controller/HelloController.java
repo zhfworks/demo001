@@ -1,5 +1,6 @@
 package com.example.demo001.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.example.demo001.entity.Emp;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +15,6 @@ public class HelloController {
         Emp emp = new Emp();
         emp.setId(1L);
         emp.setName("name");
-        return "123";
+        return JSONObject.toJSONString(emp);
     }
 }
