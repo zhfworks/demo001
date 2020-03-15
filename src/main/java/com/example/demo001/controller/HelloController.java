@@ -15,6 +15,7 @@ public class HelloController {
         Emp emp = new Emp();
         emp.setId(1L);
         emp.setName("name");
+        //用于测试远程分支合并
         return JSONObject.toJSONString(emp);
     }
 }
